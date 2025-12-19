@@ -1,0 +1,158 @@
+site_name: Gazebo Sim Plugin Tutorial
+site_author: Hrithik Verma
+
+theme:
+  name: material
+  language: en
+  # logo: assets/logo.svg        # put your logo in docs/assets/logo.svg
+  # favicon: assets/favicon.png  # put your favicon in docs/assets/favicon.png
+  # icon:
+  #   repo: fontawesome/brands/github
+  features:
+    # Navigation / layout
+    # - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+
+    # TOC + search
+    - toc.follow
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+
+    # Content UX
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+nav:
+  - Introduction: introduction.md
+  - Inital Setup For Tutorial: inital_setup.md
+  - Some C++ Concepts: some_cplus_concept.md
+  - Gazebo Structure (Plugin Perspective): gz-structure-plugin-perspective.md
+  - What Is Entity Component System?: what-is-ecs.md
+  - System Plugin Interfaces: system-plugin-interfaces.md
+  - Common Code Snap Of System Plugin: common-code-system-plugin.md
+  # - Tutorials:
+  #     - Plugin basics: basics.md
+  #     - World plugin: world_plugin.md
+  #     - Model plugin: model_plugin.md
+
+plugins:
+  - search:
+      lang: en
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: date
+  - minify:
+      minify_html: true
+  - redirects:
+      redirect_maps: {}
+  # - mermaid2:
+  #     javascript: https://unpkg.com/mermaid/dist/mermaid.min.js
+
+  # If you have Python API docs:
+  # - mkdocstrings:
+  #     handlers:
+  #       python:
+  #         options:
+  #           show_source: false
+  #           show_signature_annotations: true
+
+  # If you want C/C++ API docs as standalone Doxygen HTML under /doxygen:
+  # - doxygen:
+  #     packages:
+  #       - doxygen:
+  #           url: .
+  #           outdir: doxygen
+  #           # doxyfile: Doxyfile   # optional
+
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - fenced_code
+
+extra_css:
+  - stylesheets/extra.css
+
+# extra_javascript:
+# #   - javascripts/drawer.js
+#   - https://unpkg.com/mermaid/dist/mermaid.min.js
+#   - javascripts/mermaid-init.js
+
+
+
+
+
+extra:
+  # Bottom/footer social icons (author links):
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/hrithik-verma-35a155193
+      name: LinkedIn
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/<your-handle>/
+      name: Instagram
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@RoboticsWithHrithik
+      name: YouTube
+
+  # Optional: show a version selector (like “latest / vX.Y”) if you deploy with mike
+  # version:
+  #   provider: mike
+
+copyright: Copyright &copy; 2025 Hrithik Verma

@@ -1,0 +1,87 @@
+/* Custom color for tip admonition */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  background-color: #e3f2fd;   /* light blue */
+  border-left-color: #2196f3;  /* blue accent */
+}
+
+/* Optional: title bar color */
+.md-typeset .admonition.tip > .admonition-title,
+.md-typeset details.tip > summary {
+  background-color: #bbdefb;
+}
+
+.red-quote {
+  background-color: #fdecea;
+  color: #b71c1c;
+  padding: 12px 16px;     /* smaller padding */
+  border-radius: 6px;
+  font-size: 1.05rem;    /* ↓ smaller text */
+  font-weight: 500;
+  line-height: 1.5;      /* better wrapping */
+  max-width: 100%;
+  white-space: normal;   /* ensure wrapping */
+  text-align: center
+}
+
+/* Widen the whole site container (reduces left + right margins) */
+.md-grid {
+  max-width: 100%;          /* full width */
+  /* or: max-width: 1600px;  // pick a fixed width if you prefer */
+}
+
+/* Optional: reduce side padding a bit */
+.md-main__inner {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+
+
+/* Desktop: convert the primary sidebar into an off-canvas drawer */
+/* @media screen and (min-width: 76.25em) {
+
+  Show the hamburger button on desktop Sidebar
+  .md-header__button.md-icon[for="__drawer"] {
+    display: inline-flex;
+  }
+
+  Sidebar becomes a sliding panel
+  .md-sidebar--primary {
+    position: fixed;
+    top: var(--md-header-height);
+    left: 0;
+    height: calc(100vh - var(--md-header-height));
+    transform: translateX(-105%);
+    transition: transform 0.25s ease;
+    z-index: 4;
+    background: var(--md-default-bg-color);
+    box-shadow: var(--md-shadow-z2);
+  } */
+
+  /* When drawer is toggled open */
+  /* #__drawer:checked ~ .md-container .md-sidebar--primary {
+    transform: translateX(0);
+  } */
+
+  /* Ensure content uses full width (no reserved sidebar space) */
+  .md-main__inner {
+    margin-left: 0;
+  }
+
+  /* Overlay (click to close) */
+  .md-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease;
+    z-index: 3;
+  }
+
+  #__drawer:checked ~ .md-container .md-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+}
