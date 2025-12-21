@@ -61,6 +61,7 @@ nav:
   - Standalone Gazebo Sim Plugin:
         - Common In All System Plugin: common-in-all-system.plugin.md
         - Print Entity System Plugin: print-entity-system-plugin.md
+        - Move Model System Plugin: move-model.md
   # - Tutorials:
   #     - Plugin basics: basics.md
   #     - World plugin: world_plugin.md

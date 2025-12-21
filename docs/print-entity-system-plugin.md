@@ -8,13 +8,18 @@
    <summary>.hh file</summary>
 
 ```c++
-#ifndef WORLD_PLUGIN_HH
-#define WORLD_PLUGIN_HH
+#ifndef SYSTEM_PLUGIN_MODEL_HH_
+#define SYSTEM_PLUGIN_MODEL_HH_
 
 //! [header]
-#include <gz/sim/System.hh>   //to inherit system
-#include "gz/sim/components/Name.hh" // for name component
+#include <gz/sim/System.hh>  // to inherit system
+#include "gz/sim/Model.hh"  // for Model component
+#include "gz/sim/components/LinearVelocity.hh" // for linear velocity 
+#include "gz/sim/components/LinearVelocityCmd.hh" // for LinearVelocityCmd component
+#include "gz/sim/components/Name.hh"  // for Name component
 #include <gz/plugin/Register.hh> //for GZ_ADD_PLUGIN_ALIAS()
+
+
 
 namespace gz
 {
@@ -22,31 +27,33 @@ namespace sim
 {
 namespace systems
 {
-/// \brief plugin to move a model
-/// plugin interface.
-class PrintEntitySystemPlugin :
+  /// \brief plugin to move a model
+  /// plugin interface.
+  class MoveModel :
     // This class is a system.
     public gz::sim::System,
     public gz::sim::ISystemConfigure,
+    // This class also implements the ISystemPreUpdate interface.
     public gz::sim::ISystemPreUpdate
-{
-public:
-    PrintEntitySystemPlugin();
+  {
+   public:
+    MoveModel();
 
-    ~PrintEntitySystemPlugin() override;
+    ~MoveModel() override;
 
     void Configure(const Entity &_entity,
-                const std::shared_ptr<const sdf::Element> &_sdf,
-                EntityComponentManager &_ecm,
-                EventManager &_eventMgr) override;
+                   const std::shared_ptr<const sdf::Element> &_sdf,
+                   EntityComponentManager &_ecm,
+                   EventManager &_eventMgr) override;
 
     void PreUpdate(const UpdateInfo &_info,
-                EntityComponentManager &_ecm) override;
+                  EntityComponentManager &_ecm) override;
 
-private:
+   private:
     std::string modelName;
-    Entity targetEntity;
-};
+    double zVelocity{0.0};
+    Entity targetEntity{kNullEntity};
+  };
 }
 }
 }
@@ -54,6 +61,7 @@ private:
 //! [header]
 
 #endif
+
 ```
 </details>
 
@@ -271,7 +279,14 @@ this->modelName = Name->Data();
 
 ![name_component](assets/images/name_component.png)
 
-```Name->Data()```  why?  ```->Data()``` because its ```std::optional<entity>```
+```Name->Data()```  why?  ```->Data()``` because its comes from ```component class``` <br>
+return type of ```_ecm.Component<..>``` is ```component```
+
+[gz::sim::components::component in gz doc](https://gazebosim.org/api/sim/9/classgz_1_1sim_1_1components_1_1Component.html)
+
+![data](assets/images/Data.png)
+
+
 
 
 
