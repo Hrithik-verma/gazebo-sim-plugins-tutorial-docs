@@ -83,7 +83,8 @@ We will take help of components to find entity integer value like:
   <summary>b. search the entity by its name</summary>
   
    ```c++
-      std::string name = _ecm.Component<components::Name>(entity)->Data();
+      // find the entity (int value) which has Name Component with value as "xyz"
+      targetEntity = _ecm.EntityByComponents(components::Name("xyz"));
    ```
 
    ```c++
@@ -121,12 +122,26 @@ We will take help of components to find entity integer value like:
 
 ...``Cmd`` means to command to change that container value like ```LinearVelocityCmd```, ```WorldPoseCmd```, 	```VisualCmd```
 
+### Read
+<details>
+   <summary>a. Component</summary>
+
+  ```c++
+  //find Name component value of the entity(any entity_type eg model,link,world etc)
+  auto Name = _ecm.Component<components::Name>(this->targetEntity);
+  this->modelName = Name->Data();
+  ```
+
+</details>
+
+
 #### Write
  <details>
    <summary>a. SetComponentData</summary>
    
    ```c++
    const gz::math::Vector3d vel(0.0, 0.0, this->zVelocity);
+   //set the LinearVelocityCmd component value to be vel
    _ecm.SetComponentData<components::LinearVelocityCmd>(this->targetEntity,{vel});
    ```
  </details>
@@ -135,6 +150,7 @@ We will take help of components to find entity integer value like:
    <summary>b. mutable component</summary>
    
    ```c++
+   //set the LinearVelocityCmd component value to be vel
    auto velComp = _ecm.Component<components::LinearVelocityCmd>(this->targetEntity);
    velComp->Data() = vel;
    ```

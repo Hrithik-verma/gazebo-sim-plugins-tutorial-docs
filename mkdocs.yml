@@ -58,6 +58,9 @@ nav:
   - What Is Entity Component System?: what-is-ecs.md
   - System Plugin Interfaces: system-plugin-interfaces.md
   - Common Code Snap Of System Plugin: common-code-system-plugin.md
+  - Standalone Gazebo Sim Plugin:
+        - Common In All System Plugin: common-in-all-system.plugin.md
+        - Print Entity System Plugin: print-entity-system-plugin.md
   # - Tutorials:
   #     - Plugin basics: basics.md
   #     - World plugin: world_plugin.md
@@ -145,7 +148,7 @@ extra:
       link: https://www.linkedin.com/in/hrithik-verma-35a155193
       name: LinkedIn
     - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/<your-handle>/
+      link: https://www.instagram.com/hrithik.verma.100/?hl=en
       name: Instagram
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@RoboticsWithHrithik
