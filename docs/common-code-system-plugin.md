@@ -101,17 +101,18 @@ We will take help of components to find entity integer value like:
 
   ```c++
 
-    //check for such components which has Light, Name components
-    _ecm.Each<components::Light, components::Name>(
-      [&](const Entity &_entity,
-          const components::Light *,
-          const components::Name *_name) -> bool
-      {
-        this->lightEntites.push_back(_entity);
-        // gzmsg << "Found light: " << _name->Data()
-        //       << " (entity " << _entity << ")\n";
-        return true;
-      });
+  //check for such components which has Light, Name components
+  // each
+  _ecm.Each<components::Light, components::Name>(
+    [&](const Entity &_entity,
+        const components::Light *,
+        const components::Name *_name) -> bool
+    {
+      this->lightEntites.push_back(_entity);
+      // gzmsg << "Found light: " << _name->Data()
+      //       << " (entity " << _entity << ")\n";
+      return true;
+    });
   ```
 
   </details>

@@ -11,7 +11,7 @@ rclcpp we can direct use standard ros2 ```publisher/subscriber```,```service/cli
 ## Need A Different thread for ros2 in plugin why?
 
 
- ros executor code snap
+ros executor code snap
 
 ```c++
 rclcpp::executors::SingleThreadedExecutor executor;
