@@ -118,6 +118,25 @@ We will take help of components to find entity integer value like:
   </details>
 
 
+<details>
+  <summary>d. find EntityByComponents</summary>
+
+uing ```EntityByComponents()```
+
+find such a joint entity which has all of the followings components:
+        parent entity is ***model component*** to which plugin is attached,
+        has a ***name component*** of value ```joint_1``` 
+        ***joint compenent*** is attach on it
+
+[reference code](https://github.com/gazebosim/gz-sim/blob/gz-sim8/src/Model.cc#L132C1-L133C1)
+
+```c++
+  this->jointEntity = _ecm.EntityByComponents(
+      components::ParentEntity(_entity),
+      components::Name(jointName),
+      components::Joint());
+```
+
 ### 2. Read/Write on the Component value
 ![command](assets/images/cmd_component.png)
 

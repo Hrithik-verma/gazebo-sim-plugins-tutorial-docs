@@ -66,13 +66,12 @@ nav:
   - ROS2_WS:
         - Common In All Ros2 Ws Plugins: common-in-all-ros2-ws-plugins.md
         - Move Model Using ros-gz-bridge: movemodel_using-ros-gazebo-bridge.md
-        - Move Model Using Direct ROS Plugin: move-model-direct-ros-plugin.md
+        - Move Model Using Direct ROS2 Plugin: move-model-direct-ros-plugin.md
         - Light Control System Plugin: light-control-system-plugin.md
         - Light Control Service Way: light-control-service-way-plugin.md
-  # - Tutorials:
-  #     - Plugin basics: basics.md
-  #     - World plugin: world_plugin.md
-  #     - Model plugin: model_plugin.md
+        - Light Control Using Direct ROS2 Plugin: light-control-direct-ros-plugin.md
+        - Joint Control System Plugin: joint-control-system-plugin.md
+
 
 plugins:
   - search:
