@@ -22,9 +22,9 @@ most **important** gazebo sim availabe [components list](https://gazebosim.org/a
 <br>
 <br>
 
-### 2. Use [Common Codes In All System Plugins](common-in-all-system.plugin.md) from this tutorial
+### 2. Use [Common Codes In System Plugins](common-code-system-plugin.md) from this tutorial
 
-[Common Codes In All System Plugins](common-in-all-system.plugin.md) is basically cheat sheet of all the code that we ever wrote on this series. It has some different types of function api which can be used to **find entity**, **read/write on the components**
+[Common Codes In System Plugins](common-code-system-plugin) is basically cheat sheet of all the code that we ever wrote on this series. It has some different types of function api which can be used to **find entity**, **read/write on the components**
 
 <br>
 <br>
