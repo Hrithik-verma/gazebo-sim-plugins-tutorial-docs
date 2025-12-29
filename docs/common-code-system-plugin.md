@@ -137,6 +137,8 @@ find such a joint entity which has all of the followings components:
       components::Joint());
 ```
 
+</details>
+
 ### 2. Read/Write on the Component value
 ![command](assets/images/cmd_component.png)
 
