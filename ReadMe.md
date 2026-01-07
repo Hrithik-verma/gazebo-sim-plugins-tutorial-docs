@@ -40,7 +40,7 @@ It has all docs related to Gazebo Sim lugins Youtube Tutorial series.
 - [Real Gazebo Sim Repo Examples + Pro Tips and the Pimpl Pattern¶](https://hrithik-verma.github.io/gazebo-sim-plugins-tutorial-docs/example-from-gazebo-sim-repo-and-pro-tips/)
 
 
-
+<br>
 
 YouTube Tutorial
 ----------------
