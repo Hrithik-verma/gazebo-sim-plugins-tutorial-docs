@@ -1,13 +1,11 @@
 # Gazebo Sim Plugins Tutorial Docs
 
-It has all docs related to Gazebo Sim Plugins Youtube Tutorial series.
+It has all docs related to Gazebo Sim lugins Youtube Tutorial series.
 
 
-📚 **Full Documentation Website**  
-👉 https://hrithik-verma.github.io/gazebo-sim-plugins-tutorial-docs/
+📚 **Full Documentation Website**:  https://hrithik-verma.github.io/gazebo-sim-plugins-tutorial-docs/
 
 
-<br>
 <br>
 
 ## 📑 Detailed Documentation Index
