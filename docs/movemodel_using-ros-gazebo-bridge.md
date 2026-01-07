@@ -1,4 +1,17 @@
 # Move Model Using ROS GZ Bridge
+
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/TU77ek6_bA0?si=XCMtr3D7qakm01Cs"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+
 From Now on we are using ros_ws for all of our plugin.
 This plugin is just copy paste of [MoveModelTopicWay](movemodel_using_topic.md) into ros_ws & addition is we are using [ros_gz_bridge](https://docs.ros.org/en/jazzy/p/ros_gz_bridge/){target=_blank} to map ros2 topic with gazebo topic & control the movel model zVelocity. So the same system plugin on addition is ros2 topic.
 

@@ -1,4 +1,16 @@
 # LightControlDirectROS Plugin
+
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/H_aGfA4a22U?si=WDEDc8hw_yr_rGCv"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
 We are going to use rclcpp to control light on/off same system plugin as [LightControl Plugin](light-control-system-plugin.md) by ros2 service of type ```std_srvs/srv/Trigger```
 
 

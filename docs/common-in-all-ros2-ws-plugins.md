@@ -1,5 +1,16 @@
 # Common Things In All ros2_ws Plugins
 
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/TU77ek6_bA0?si=XCMtr3D7qakm01Cs"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
 ## Structure
 
 ```text

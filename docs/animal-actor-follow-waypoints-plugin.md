@@ -1,4 +1,18 @@
 # Animal Actor Follow WayPoints Plugin
+
+
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/sRh92U6co9U?si=hXFPTbJOfC5yOn87"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+
 In these tutoiral we are going to used a animated dog as a [gazebo actor](https://gazebosim.org/docs/latest/actors/){target=_blank} & make it follow waypoints & animate walking dog.
 
 ![dog moving in place](assets/images/dog_moving_in_place.gif)

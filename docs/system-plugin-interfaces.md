@@ -1,5 +1,18 @@
 # System Plugin Intefaces
 
+
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/6peYbiaVifo?si=-UBE7BMgWFxcuD6J"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+
 official gazebo sim doc [link](https://gazebosim.org/api/sim/8/createsystemplugins.html){target=_blank}
 
 comman line in any system plugin

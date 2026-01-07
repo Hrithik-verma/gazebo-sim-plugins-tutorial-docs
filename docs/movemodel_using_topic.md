@@ -1,5 +1,17 @@
 # Move Model Using Topic System Plugin
 
+
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/xeQoCLLQVaU?si=Jg9ZwF6qU2KpY39g"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
 In these plugin logic & system api are same as [Move Model System Plugin](move-model.md) & only addition is we are going to use gz sim topic to control the velocity. We will write a [gazebo transport](https://gazebosim.org/api/transport/15/tutorials.html){target=_blank} node which will subscribe to gazebo sim topic and base on the value will move the model.
 
 

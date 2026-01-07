@@ -1,5 +1,16 @@
 # MoveModelDirectRos Plugin
 
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/LD-NH1-37zk?si=DSS_htDGrThdXJ1S"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
 As we understood in the last method that ros-gz-brige has limited supported msgs. So we are going undertand to add direct ros2 rclcpp into gazebo sim system plugin.
 
 rclcpp we can direct use standard ros2 ```publisher/subscriber```,```service/client``` rclcpp everything of a ros2 node syntex is same.

@@ -1,5 +1,16 @@
 # Gazebo Sim Structure Plugin Perspective
 
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/KRkrBfGSvds?si=LzPIV58GG3I24JP5"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
 ![Architecture tree](assets/gazebo_arch_tree.svg)
 
 code/git repo for reference:<br>

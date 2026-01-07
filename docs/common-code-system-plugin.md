@@ -1,5 +1,19 @@
 # Common Used System Plugin API
 
+
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/AZ9E101Ven4?si=pOsolaYBxKR_Hyqe"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
+
+
 important part in api doc:<br>
     - [gz::sim](https://gazebosim.org/api/sim/9/namespacegz_1_1sim.html){target=_blank}<br>
     - [gz::sim::EntityComponentManager](https://gazebosim.org/api/sim/9/classgz_1_1sim_1_1EntityComponentManager.html){target=_blank}<br>

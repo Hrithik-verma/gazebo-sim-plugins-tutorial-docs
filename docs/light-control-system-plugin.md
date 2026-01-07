@@ -1,4 +1,17 @@
 # Light Control System Plugin
+
+
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/L9-3nozt4ac?si=nuf9BloEaf7h2vGa"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
 In this tutorial we make a light control system plugin. Will use 2 spot light to make disco light effect
 
 ![light](assets/images/sportlights_gz.png)

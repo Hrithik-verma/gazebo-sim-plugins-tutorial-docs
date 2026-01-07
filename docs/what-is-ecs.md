@@ -1,4 +1,13 @@
 # Enitity Component System
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/NfcCNiX3f1c?si=8wrzNWPkh1Pxv-TQ"
+  title="Entity Component System Explained"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
 
 ## What Is ECS?
 -----

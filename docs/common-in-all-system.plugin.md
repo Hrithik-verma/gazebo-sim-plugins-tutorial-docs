@@ -1,6 +1,14 @@
 ## Common In All System Plugin
 
-
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/AZ9E101Ven4?si=pOsolaYBxKR_Hyqe"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
 
 1) Go to a standalone plugin folder:
 ```bash

@@ -1,5 +1,16 @@
 # Real Gazebo Sim Repo Examples + Pro Tips and the Pimpl Pattern
 
+<iframe
+  width="960"
+  height="540"
+  src="https://www.youtube.com/embed/Q-MYXJwnlDM?si=CChrpBR0WcfuyHCE"
+  title="Gazebo Sim Structure Plugin Perspective"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+
 The intention of these entire tutorial series was to make you capable enough to deal with actual [gazebo sim repo codes](https://github.com/gazebosim/gz-sim/tree/gz-sim10/src/systems) & build good understanding of [gazebo sim api](https://gazebosim.org/api/sim/9/namespacegz_1_1sim.html). <br>
 Will see ***some tips***, ***actual repo examples*** & ***Piml Pattern used in gazebo sim plugin***.
 
